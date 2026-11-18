@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/main_page_banner.png" alt="Position Locks" width="1200">
+  <img src="assets/main_page_banner.png" width="1200">
 </p>
 
 # Position Locks for Katapult
