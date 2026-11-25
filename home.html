@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lock or unlock node positions from the Katapult Pro map with the independent Position Locks Chrome extension.">
+  <meta name="description" content="Lock or unlock node positions from the Katapult Pro map. New in Position Locks 0.3.5: move the toolbar and lock it in place.">
   <meta name="theme-color" content="#edf6f1">
   <meta property="og:url" content="https://azx-215.github.io/position-locks-offical/home">
   <meta property="og:title" content="Position Locks for Katapult">
-  <meta property="og:description" content="Lock or unlock a single node or all supported nodes in a Katapult Pro job.">
+  <meta property="og:description" content="Lock or unlock nodes in Katapult Pro and customize your toolbar position with the new v0.3.5 update.">
   <meta property="og:image" content="https://azx-215.github.io/position-locks-offical/assets/position-locks-map.webp">
   <title>Home | Position Locks for Katapult</title>
   <link rel="canonical" href="https://azx-215.github.io/position-locks-offical/home">
@@ -25,6 +25,7 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="./home" aria-current="page">Home</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#toolbar-position">What's new</a>
         <a href="https://azx-215.github.io/position-locks-support/support">Support</a>
         <a href="https://azx-215.github.io/position-locks-support/privacy">Privacy</a>
       </nav>
@@ -34,6 +35,7 @@
   <main id="main">
     <section class="shell hero" aria-labelledby="page-title">
       <div class="hero-content">
+        <a class="release-badge" href="#toolbar-position">New in v0.3.5 · Movable toolbar <span aria-hidden="true">↗</span></a>
         <h1 id="page-title">Position Locks <span>for Katapult</span></h1>
         <p class="intro">Lock or unlock node positions directly from the Katapult Pro map.</p>
         <a class="button" href="#how-it-works">How it works <span aria-hidden="true">↓</span></a>
@@ -45,6 +47,46 @@
           alt="Illustrated street map with a lock marking a node at the intersection of two utility routes.">
         <figcaption class="map-label"><i aria-hidden="true"></i> Position locked</figcaption>
       </figure>
+    </section>
+
+    <section class="toolbar-feature" id="toolbar-position" aria-labelledby="toolbar-title">
+      <div class="shell">
+        <span class="feature-kicker">Version 0.3.5 · New feature</span>
+        <h2 id="toolbar-title">Move it. Lock it in place.</h2>
+        <p class="feature-intro">Put Position Locks where you need it. The compact toolbar can be repositioned without changing any pole or node locks, and the panel follows your chosen location.</p>
+        <ol class="toolbar-steps">
+          <li>
+            <div class="toolbar-example" aria-hidden="true">
+              <span class="sample-name">Position Locks</span>
+              <span class="sample-icon sample-highlight"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg></span>
+            </div>
+            <span class="step-number" aria-hidden="true">1</span><h3>Unlock the toolbar</h3>
+            <p>Click the small padlock next to Position Locks. The movement grip and reset arrow appear.</p>
+          </li>
+          <li>
+            <div class="toolbar-example" aria-hidden="true">
+              <span class="sample-name">Position Locks</span>
+              <span class="sample-icon sample-unlocked"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0M12 15v2"/></svg></span>
+              <span class="sample-icon sample-highlight"><svg viewBox="0 0 24 24" class="sample-dots"><circle cx="9" cy="6" r="1.8"/><circle cx="15" cy="6" r="1.8"/><circle cx="9" cy="12" r="1.8"/><circle cx="15" cy="12" r="1.8"/><circle cx="9" cy="18" r="1.8"/><circle cx="15" cy="18" r="1.8"/></svg></span>
+              <span class="sample-icon"><svg viewBox="0 0 24 24"><path d="M20 4v6h-6M20 10a8 8 0 1 0 .1 5"/></svg></span>
+            </div>
+            <span class="step-number" aria-hidden="true">2</span><h3>Drag to reposition</h3>
+            <p>Drag the six-dot grip to a convenient spot on the screen. The open panel moves with the toolbar.</p>
+          </li>
+          <li>
+            <div class="toolbar-example" aria-hidden="true">
+              <span class="sample-name">Position Locks</span>
+              <span class="sample-icon"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg></span>
+            </div>
+            <span class="step-number" aria-hidden="true">3</span><h3>Lock it in place</h3>
+            <p>Click the padlock again to keep the toolbar fixed. Placement and lock preferences are saved locally.</p>
+          </li>
+        </ol>
+        <div class="toolbar-note">
+          <p><strong>Want the default location back?</strong> Unlock the toolbar and click the reset arrow to return it to the bottom dock.</p>
+          <a class="button button-outline" href="https://azx-215.github.io/position-locks-support/support#toolbar-help">Toolbar help <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
     </section>
 
     <section class="workflow" id="how-it-works" aria-labelledby="workflow-title">
@@ -59,7 +101,7 @@
           <li>
             <span class="step-number" aria-hidden="true">2</span>
             <h3>Choose which nodes to update</h3>
-            <p>Click <strong>Position Locks</strong> at the bottom of the map. Use <strong>Single Node</strong> for the node you select on the map, or <strong>All Job Nodes</strong> to update all supported nodes in the job.</p>
+            <p>Click <strong>Position Locks</strong> at the bottom of the map or wherever you have placed the toolbar. Use <strong>Single Node</strong> for the node you select on the map, or <strong>All Job Nodes</strong> to update all supported nodes in the job.</p>
           </li>
           <li>
             <span class="step-number" aria-hidden="true">3</span>
@@ -75,7 +117,7 @@
       <div class="support-panel">
         <div>
           <h2 id="support-title">Support</h2>
-          <p>Get help with Node Info, interrupted edits, or a batch that stopped early.</p>
+          <p>Get help with moving the toolbar, Node Info, interrupted edits, or a batch that stopped early.</p>
         </div>
         <a class="button button-outline" href="https://azx-215.github.io/position-locks-support/support">Get support <span aria-hidden="true">→</span></a>
       </div>
